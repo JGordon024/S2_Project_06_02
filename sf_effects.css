@@ -14,20 +14,25 @@
 */
 
 /* Body Header Styles */
+/* Gives the body element shadows */
 body {
     box-shadow: 10px 0px 50px rgb(51, 51, 51), -10px 0px 50px rgb(51, 51, 51);
 }
 
+/* Makes the header image span all the way across the header */
 body>header nav.tabs {
     background: url(sf_back1.png) no-repeat center/100%;
 }
 
 
 /* Navigation Tabs List Styles */
+/* Makes the element look more 3Dish, making it angles back some */
 body>header nav.tabs li {
-    transform: rotateX(20deg) perspective(500px)
+    transform: perspective(50px) rotateX(20deg);
+
 }
 
+/* Changes color of background when hovered over */
 body>header nav.tabs li:hover,
 body>header nav.tabs li:active {
     background: rgb(231, 231, 231);
@@ -36,31 +41,36 @@ body>header nav.tabs li:active {
 
 /* Left Section Styles */
 
-
+/* Gives the left nav a border and gives the element rounded corners */
 section#left nav.vertical {
     border: solid 1px rgb(20, 167, 170);
     border-radius: 25px;
 }
 
+/* Gives the h1 elements within the left nav rounded corners */
 section#left nav.vertical h1 {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 /* Center Article Styles */
+/* Creates solid borders, shadows for the element, and a radius. The background has a center that has white, which transitions into a gray color */
 section#center article {
-    background: radial-gradient(center, white 30% rgb(151, 151, 151));
+    background: radial-gradient(white 30%, rgb(151, 151, 151));
     border: solid 1px rgb(151, 151, 151);
     border-radius: 50px;
     box-shadow: 10px 10px 20px;
 }
 
 /* Blockquote Styles */
+/* Makes the blockquote image not repeat, gives the vertical and horizontal size to 100% and gives it a shadow, so it fits all the content */
 blockquote {
-    background: url(sf_speech.png) no-repeat 100% 100%;
+    background: url(sf_speech.png) no-repeat;
+    background-size: 100% 100%;
     filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
 }
 
+/* Makes the profile images rounded */
 cite img {
     border-radius: 50%;
 }
